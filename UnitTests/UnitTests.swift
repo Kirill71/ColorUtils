@@ -31,6 +31,7 @@ class ColorUtilsTestSuite: XCTestCase {
     func testConvertFromRgbaToHsl() {
         
         let rgba = ColorRGBA(r: 47, g: 25, b: 123, a: 255)
+        
         let hsl = convertToHSL(rgba: rgba)
         
         XCTAssertEqual(0.7040816326530613, hsl.h)
@@ -47,7 +48,6 @@ class ColorUtilsTestSuite: XCTestCase {
         XCTAssertEqual(24, rgba.g)
         XCTAssertEqual(123, rgba.b)
         XCTAssertEqual(255, rgba.a)
-        
     }
     
 }
